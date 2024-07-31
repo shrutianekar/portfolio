@@ -8,9 +8,12 @@
 </head>
 <body>
     <header>
-        <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
-        <h1>Shruti Anekar</h1>
-        <p>Senior DevOps Engineer</p>
+        <div class="hero">
+            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Shruti Anekar</h1>
+            <p>Transforming ideas into reliable infrastructure</p>
+            <a href="#contact" class="btn">Get in Touch</a>
+        </div>
         <nav>
             <ul>
                 <li><a href="#about">About</a></li>
@@ -25,43 +28,56 @@
     
     <section id="about">
         <h2>About Me</h2>
-        <p>Hands-on DevOps Engineer with 4+ years of experience in various aspects of DevOps and cloud computing...</p>
+        <p>Senior DevOps Engineer with a passion for cloud infrastructure and automation. Experienced in designing, building, and managing scalable systems...</p>
     </section>
     
     <section id="experience">
         <h2>Experience</h2>
-        <h3>Senior DevOps Engineer - Coupa Software</h3>
-        <p>Responsibilities: Spearheaded the migration of services from EC2 to CCP...</p>
-        <h3>DevOps Engineer - Trilio for Kubernetes</h3>
-        <p>Responsibilities: Implemented Prow CI/CD for automated builds...</p>
+        <div class="card">
+            <h3>Senior DevOps Engineer - Coupa Software</h3>
+            <p>Leading infrastructure automation and CI/CD pipeline optimization...</p>
+        </div>
+        <div class="card">
+            <h3>DevOps Engineer - Trilio for Kubernetes</h3>
+            <p>Implemented Prow CI/CD and automated testing pipelines...</p>
+        </div>
     </section>
     
     <section id="skills">
         <h2>Skills</h2>
-        <p>Languages: Go, Python, Bash</p>
-        <p>DevOps Tools: Docker, Jenkins, GitLab CI...</p>
+        <div class="skills">
+            <div class="skill-bar" data-skill="80%">Docker</div>
+            <div class="skill-bar" data-skill="75%">Kubernetes</div>
+            <div class="skill-bar" data-skill="85%">AWS</div>
+        </div>
     </section>
     
     <section id="projects">
         <h2>Projects</h2>
-        <h3>Coupa Software</h3>
-        <p>Details about the project and your role...</p>
-        <h3>Trilio for Kubernetes</h3>
-        <p>Details about the project and your role...</p>
+        <div class="grid">
+            <div class="project-card">
+                <img src="images/project1.png" alt="Project 1">
+                <h3>Project Name</h3>
+                <p>Short description of the project...</p>
+            </div>
+            <div class="project-card">
+                <img src="images/project2.png" alt="Project 2">
+                <h3>Project Name</h3>
+                <p>Short description of the project...</p>
+            </div>
+        </div>
     </section>
-
+    
     <section id="certifications">
         <h2>Certifications</h2>
-        <ul>
-            <li>
-                <img src="images/aws-certified.png" alt="AWS Certified Solutions Architect Associate" class="cert-icon">
-                AWS Certified Solutions Architect Associate
-            </li>
-            <li>
-                <img src="images/cka.png" alt="Certified Kubernetes Administrator" class="cert-icon">
-                Certified Kubernetes Administrator (CKA)
-            </li>
-        </ul>
+        <div class="certification-card">
+            <img src="images/aws-certified.png" alt="AWS Certified Solutions Architect Associate">
+            <h3>AWS Certified Solutions Architect Associate</h3>
+        </div>
+        <div class="certification-card">
+            <img src="images/cka.png" alt="Certified Kubernetes Administrator">
+            <h3>Certified Kubernetes Administrator (CKA)</h3>
+        </div>
     </section>
     
     <section id="contact">
