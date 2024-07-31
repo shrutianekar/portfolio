@@ -4,17 +4,30 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
-    background: #333;
-    color: #fff;
-    padding: 20px 0;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin: 5px 0;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 150px;
+    margin: 20px auto;
+    display: block;
 }
 
 nav ul {
@@ -24,27 +37,57 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin: 0 10px;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: #fff;
+    color: white;
     text-decoration: none;
+    font-size: 1.2em;
 }
 
 section {
     padding: 20px;
     margin: 20px auto;
     max-width: 800px;
-    background: #fff;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+section h2 {
+    color: #4CAF50;
+    font-size: 2em;
+}
+
+.cert-icon, .social-icon {
+    width: 50px;
+    vertical-align: middle;
+    margin-right: 10px;
 }
 
 footer {
     text-align: center;
     padding: 20px;
     background: #333;
-    color: #fff;
-    position: fixed;
+    color: white;
+    position: relative;
     bottom: 0;
     width: 100%;
+}
+
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 5px 0;
+    }
+
+    section {
+        margin: 10px;
+        padding: 15px;
+    }
 }
