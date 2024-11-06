@@ -7,101 +7,62 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <div class="hero">
-            <img src="images/profile.jpg" alt="Profile Picture" class="profile-pic">
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <img src="images/profile.jpg" alt="Shruti Anekar" class="profile-pic">
             <h1>Shruti Anekar</h1>
-            <p>Transforming ideas into reliable infrastructure</p>
+            <p>Transforming Ideas into Scalable Infrastructure</p>
             <a href="#contact" class="btn">Get in Touch</a>
         </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#certifications">Certifications</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Senior DevOps Engineer with a passion for cloud infrastructure and automation. Experienced in designing, building, and managing scalable systems...</p>
-    </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <div class="card">
-            <h3>Senior DevOps Engineer - Coupa Software</h3>
-            <p>Leading infrastructure automation and CI/CD pipeline optimization...</p>
-        </div>
-        <div class="card">
-            <h3>DevOps Engineer - Trilio for Kubernetes</h3>
-            <p>Implemented Prow CI/CD and automated testing pipelines...</p>
-        </div>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <div class="skills">
-            <div class="skill-bar" data-skill="80%">Docker</div>
-            <div class="skill-bar" data-skill="75%">Kubernetes</div>
-            <div class="skill-bar" data-skill="85%">AWS</div>
-        </div>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="grid">
-            <div class="project-card">
-                <img src="images/project1.png" alt="Project 1">
-                <h3>Project Name</h3>
-                <p>Short description of the project...</p>
-            </div>
-            <div class="project-card">
-                <img src="images/project2.png" alt="Project 2">
-                <h3>Project Name</h3>
-                <p>Short description of the project...</p>
-            </div>
-        </div>
-    </section>
-    
-    <section id="certifications">
-        <h2>Certifications</h2>
-        <div class="certification-card">
-            <img src="images/aws-certified.png" alt="AWS Certified Solutions Architect Associate">
-            <h3>AWS Certified Solutions Architect Associate</h3>
-        </div>
-        <div class="certification-card">
-            <img src="images/cka.png" alt="Certified Kubernetes Administrator">
-            <h3>Certified Kubernetes Administrator (CKA)</h3>
-        </div>
-    </section>
-    
+
+    <!-- Navigation Bar -->
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sections -->
+    <main>
+        <section id="about">
+            <!-- Include about.html -->
+        </section>
+
+        <section id="skills">
+            <!-- Include skills.html -->
+        </section>
+
+        <section id="projects">
+            <!-- Include projects.html -->
+        </section>
+
+        <section id="certifications">
+            <!-- Include certifications.html -->
+        </section>
+    </main>
+
     <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: shruti.anekar@gmail.com</p>
-        <p>Location: Mumbai, India</p>
-        <p>
-            <a href="https://www.linkedin.com/in/shrutianekar" target="_blank">
-                <img src="images/linkedin.png" alt="LinkedIn" class="social-icon">
-            </a>
-            <a href="https://github.com/shrutianekar" target="_blank">
-                <img src="images/github.png" alt="GitHub" class="social-icon">
-            </a>
-        </p>
+        <!-- Include contact.html -->
     </section>
-    
+
     <footer>
         <p>© 2024 Shruti Anekar</p>
     </footer>
 
+    <!-- Optional Dark Mode Script -->
+    <script src="dark-mode-toggle.js"></script>
+
     <!-- Topmate Embed Script -->
     <script
         src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js"
-        user-profile="https://topmate.io/embed/profile/shrutianekar?theme=93C5F9"
+        user-profile="https://topmate.io/embed/profile/shrutianekar?theme=D5534D"
         btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}'
         embed-version="v1"
         button-text="Let's Connect"
@@ -114,5 +75,6 @@
         async=""
         defer=""
     ></script>
+
 </body>
 </html>

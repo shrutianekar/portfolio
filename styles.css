@@ -1,113 +1,113 @@
-/* Reset and Global Styles */
-body, h1, h2, h3, p, ul, li, img, a {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    vertical-align: baseline;
-}
-
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     background-color: #2E3440;
     color: #ECEFF4;
-    line-height: 1.6;
     margin: 0;
+    line-height: 1.6;
 }
 
+/* Header Section */
 header {
-    background-color: #4C566A;
-    padding: 40px 20px;
     text-align: center;
-}
-
-.hero {
-    max-width: 900px;
-    margin: 0 auto;
+    padding: 50px 20px;
+    background-color: #4C566A;
+    position: relative;
 }
 
 .profile-pic {
     border-radius: 50%;
     width: 150px;
-    margin-bottom: 20px;
+    border: 4px solid #88C0D0;
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.1);
 }
 
 header h1 {
-    font-size: 3em;
-    margin: 0.2em 0;
+    font-size: 2.5em;
+    margin: 10px 0;
+    color: #ECEFF4;
 }
 
 header p {
     font-size: 1.2em;
+    color: #D8DEE9;
 }
 
-.btn {
-    background-color: #88C0D0;
-    color: #2E3440;
-    padding: 10px 20px;
-    border-radius: 5px;
+.nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px 0;
+}
+
+.nav ul li a {
+    color: #ECEFF4;
     text-decoration: none;
-    font-size: 1.1em;
-    margin-top: 20px;
-    display: inline-block;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav ul li a:hover {
+    color: #88C0D0;
+}
+
+/* Button Styles */
+.btn {
+    color: #2E3440;
+    padding: 12px 24px;
+    background: #88C0D0;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
     background-color: #81A1C1;
+    transform: translateY(-3px);
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-nav ul li a {
-    color: #ECEFF4;
-    text-decoration: none;
-    font-size: 1.2em;
-}
-
+/* Section Styling */
 section {
     padding: 40px 20px;
-    margin: 20px auto;
+    background: #3B4252;
+    margin: 30px auto;
     max-width: 800px;
-    background-color: #3B4252;
-    border-radius: 8px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 section h2 {
+    font-size: 2em;
     color: #8FBCBB;
-    font-size: 2.5em;
-    margin-bottom: 20px;
     text-align: center;
+    margin-bottom: 20px;
 }
 
-.card, .certification-card {
-    background: #434C5E;
-    padding: 20px;
-    margin: 20px 0;
-    border-radius: 8px;
-}
-
+/* Skills Section */
 .skills {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
 .skill-bar {
     position: relative;
     background-color: #4C566A;
-    margin: 10px 0;
-    border-radius: 5px;
+    color: #ECEFF4;
+    height: 30px;
+    border-radius: 6px;
     overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    font-size: 1em;
 }
 
-.skill-bar::before {
+.skill-bar[data-skill]:before {
     content: attr(data-skill);
     position: absolute;
     left: 10px;
@@ -120,48 +120,42 @@ section h2 {
 .skill-bar::after {
     content: '';
     display: block;
-    height: 20px;
+    height: 100%;
     width: var(--width);
     background-color: #88C0D0;
+    transition: width 0.5s ease;
 }
 
-.grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+.skills .skill-bar:hover::after {
+    width: calc(var(--width) + 5%);
 }
 
-.project-card, .certification-card {
-    text-align: center;
-}
-
-.project-card img, .certification-card img {
-    width: 100%;
-    border-radius: 8px;
-}
-
+/* Footer Styles */
 footer {
     text-align: center;
     padding: 20px;
     background: #3B4252;
     color: #ECEFF4;
-    position: relative;
-    bottom: 0;
-    width: 100%;
+    font-size: 0.9em;
+    border-top: 1px solid #4C566A;
 }
 
-.social-icon {
-    width: 40px;
-    margin: 0 10px;
-}
-
+/* Responsive Adjustments */
 @media (max-width: 600px) {
     header h1 {
         font-size: 2em;
     }
 
-    nav ul li {
-        display: block;
-        margin: 10px 0;
+    .nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .profile-pic {
+        width: 120px;
+    }
+
+    section {
+        padding: 20px;
     }
 }
